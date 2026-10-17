@@ -1,0 +1,19 @@
+{
+  "track": "foshan_acepex",
+  "session_id": "2026-08-23_14-37",
+  "start": "2026-08-23T14:37:53",
+  "start_time": "2026-08-23T14:37:53",
+  "timezone": "Asia/Shanghai",
+  "utc_in_vbo_header": "2026-08-23T06:37:53.760Z",
+  "source": "RaceBobo",
+  "source_site": "https://carrot.racebobo.cn",
+  "driver": "Cyril33",
+  "site_best_lap": "1:05.464",
+  "site_best_lap_s": 65.464,
+  "racebobo_rid": 11820,
+  "raw_vbo": "raw/foshan_acepex/2026-08-23/14_37_53.vbo",
+  "original_filename": "佛山ACEPEX卡丁车_2026-08-23_14_37_53.vbo",
+  "laps_csv": null,
+  "segments_csv": null,
+  "notes": "Raw import only. laps.csv and segments.csv are omitted; GPS laps have not been cut yet."
+}

@@ -1,0 +1,19 @@
+{
+  "track": "foshan_p1",
+  "session_id": "2026-07-19_16-08",
+  "start": "2026-07-19T16:08:50",
+  "start_time": "2026-07-19T16:08:50",
+  "timezone": "Asia/Shanghai",
+  "utc_in_vbo_header": "2026-07-19T08:08:50.360Z",
+  "source": "RaceBobo",
+  "source_site": "https://carrot.racebobo.cn",
+  "driver": "Cyril33",
+  "site_best_lap": "1:00.890",
+  "site_best_lap_s": 60.89,
+  "racebobo_rid": 8344,
+  "raw_vbo": "raw/foshan_p1/2026-07-19/16_08_50.vbo",
+  "original_filename": "佛山P1国际赛车场_2026-07-19_16_08_50.vbo",
+  "laps_csv": null,
+  "segments_csv": null,
+  "notes": "Raw import only. laps.csv and segments.csv are omitted; GPS laps have not been cut yet."
+}
