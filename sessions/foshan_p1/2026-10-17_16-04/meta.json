@@ -1,0 +1,20 @@
+{
+  "track": "foshan_p1",
+  "session_id": "2026-10-17_16-04",
+  "label": "F",
+  "start_time": "2026-10-17T16:04:10",
+  "timezone": "Asia/Shanghai",
+  "utc_in_vbo_header": "2026-10-17T08:04:10.480Z",
+  "source": "RaceBobo",
+  "source_site": "https://carrot.racebobo.cn",
+  "driver": "Cyril33",
+  "kart": "rental",
+  "kart_note": "Rental kart. Kart condition varies between sessions; do not treat this as the same car as 2026-10-17 15:17.",
+  "site_best_lap_s": 59.957,
+  "raw_vbo": "raw/foshan_p1/2026-10-17/16_04_10.vbo",
+  "original_filename": "佛山P1国际赛车场_2026-10-17_16_04_10.vbo",
+  "laps_csv": "laps.csv",
+  "segments_csv": "segments.csv",
+  "segments_source": "F_1017_lap_segment_metrics.csv",
+  "notes": "laps.csv is one GPS lap per row, taken from the segment metrics (not a separate timing export). excluded=1 uses the analysis rule vmin < 28 km/h or lap > 65 s. GPS best on the kept laps is 59.957 s (lap 5), matching site_best_lap_s. Log rate 25 Hz; no [laptiming] section; rpm column is zeros."
+}
