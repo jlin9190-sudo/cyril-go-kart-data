@@ -2,79 +2,75 @@
   "id": "foshan_p1",
   "name": "佛山P1国际赛车场",
   "name_en": "foshan_p1",
+  "maps": {
+    "aerial": "map_aerial.jpg",
+    "corners": "map_corners.jpg"
+  },
+  "corner_numbering": {
+    "system": "official_t1_t17",
+    "source": "map_corners.jpg",
+    "note": "Official corner labels are T1–T17 on map_corners.jpg. All later analysis must use these labels. The earlier internal T1–T8 ids were a coarser GPS partition and are superseded; they are not the same corners as official T1–T8."
+  },
   "timing_line": {
     "lat": 22.875316,
     "lon": 113.26634,
     "crossing_heading_deg": 206.63,
-    "note": "Working point from the 2026-10-17 pipeline (N22.875316 E113.266340, heading 206.63°). Approx lat 22.87532, lon 113.26634, crossing heading ~207°."
+    "note": "Working point from the 2026-10-17 pipeline (N22.875316 E113.266340, heading 206.63°). Approx lat 22.87532, lon 113.26634, crossing heading ~207°. Kept as-is. The green tick on the main straight in map_corners.jpg has not been surveyed against this point."
   },
   "sector_lines_m_after_timing_line": {
     "status": "estimate",
-    "note": "Estimated metres after the timing line. The site does not publish sector coordinates.",
+    "note": "Estimated metres after the timing line. The site does not publish sector coordinates. Kept from the earlier analysis.",
     "S1_to_S2_m": 306.9,
     "S2_to_S3_m": 644.8
   },
   "lap_length_approx_m": 829,
   "lap_length_note": "Approximate. GPS path length varies about 811–834 m by session. The 2026-10-17 note compared that day's laps (~811–820 m) with prior session B (~834 m). CSV path lengths: E about 816–850 m (one lap 849.5), F about 807–821 m.",
-  "corners": [
-    {
-      "id": "T1",
-      "direction": "left",
-      "start_m": 73,
-      "end_m": 155,
-      "note": "bottom-left big U"
-    },
-    {
-      "id": "T2",
-      "direction": "right",
-      "start_m": 188,
-      "end_m": 268
-    },
-    {
-      "id": "T3",
-      "direction": "left",
-      "start_m": 268,
-      "end_m": 292
-    },
-    {
-      "id": "T4",
-      "direction": "left",
-      "start_m": 314,
-      "end_m": 366
-    },
-    {
-      "id": "T5",
-      "direction": "right",
-      "start_m": 480,
-      "end_m": 573
-    },
-    {
-      "id": "T6",
-      "direction": "left",
-      "start_m": 573,
-      "end_m": 626
-    },
-    {
-      "id": "T7",
-      "direction": "left",
-      "start_m": 659,
-      "end_m": 695
-    },
-    {
-      "id": "T8",
-      "direction": "left",
-      "start_m": 725,
-      "end_m": 769
-    }
-  ],
-  "segments_note": "Metres after the timing line, same gates as the 2026-10-17 analysis. Three small full-throttle kinks are treated as straights. 15 segments = 8 corners + 7 straights. T2 runs straight into T3, and T5 runs straight into T6 (no straight gate between those pairs).",
-  "straights": [
-    {"id": "直1", "start_m": 0, "end_m": 73, "label": "主直道→T1"},
-    {"id": "直2", "start_m": 155, "end_m": 188, "label": "T1→T2 短直"},
-    {"id": "直3", "start_m": 292, "end_m": 314, "label": "T3→T4 连接段"},
-    {"id": "直4", "start_m": 366, "end_m": 480, "label": "后直道"},
-    {"id": "直5", "start_m": 626, "end_m": 659, "label": "T6→T7 连接段"},
-    {"id": "直6", "start_m": 695, "end_m": 725, "label": "T7→T8 连接段"},
-    {"id": "直7", "start_m": 769, "end_m": null, "label": "T8→计时线 主直道"}
-  ]
+  "corners": {
+    "basis": "official_map",
+    "source": "map_corners.jpg",
+    "gps_gates": "not_set",
+    "note": "Corner list follows the official schematic (T1–T17). GPS metre gates are not assigned yet and must be refined later. Do not copy legacy T1–T8 metre marks onto these ids.",
+    "list": [
+      {"id": "T1", "direction": "left", "kind": "hairpin", "note": "Left hairpin at the end of the main straight."},
+      {"id": "T2"},
+      {"id": "T3"},
+      {"id": "T4"},
+      {"id": "T5"},
+      {"id": "T6"},
+      {"id": "T7"},
+      {"id": "T8"},
+      {"id": "T9"},
+      {"id": "T10"},
+      {"id": "T11"},
+      {"id": "T12"},
+      {"id": "T13"},
+      {"id": "T14"},
+      {"id": "T15"},
+      {"id": "T16"},
+      {"id": "T17", "note": "Returns onto the main straight."}
+    ]
+  },
+  "legacy_internal_corners_t1_t8": {
+    "status": "superseded",
+    "note": "Previous internal T1–T8 was a coarser partition derived from GPS (15 segments = 8 corners + 7 straights; three small full-throttle kinks were treated as straights). These ids are not official T1–T17 and must not be used in new analysis. Metre marks are the historical 2026-10-17 gates only.",
+    "corners": [
+      {"id": "T1", "direction": "left", "start_m": 73, "end_m": 155, "note": "Described in that analysis as the bottom-left big U on the GPS plot."},
+      {"id": "T2", "direction": "right", "start_m": 188, "end_m": 268},
+      {"id": "T3", "direction": "left", "start_m": 268, "end_m": 292},
+      {"id": "T4", "direction": "left", "start_m": 314, "end_m": 366},
+      {"id": "T5", "direction": "right", "start_m": 480, "end_m": 573},
+      {"id": "T6", "direction": "left", "start_m": 573, "end_m": 626},
+      {"id": "T7", "direction": "left", "start_m": 659, "end_m": 695},
+      {"id": "T8", "direction": "left", "start_m": 725, "end_m": 769}
+    ],
+    "straights": [
+      {"id": "直1", "start_m": 0, "end_m": 73, "label": "主直道→内部T1"},
+      {"id": "直2", "start_m": 155, "end_m": 188, "label": "内部T1→T2 短直"},
+      {"id": "直3", "start_m": 292, "end_m": 314, "label": "内部T3→T4 连接段"},
+      {"id": "直4", "start_m": 366, "end_m": 480, "label": "后直道"},
+      {"id": "直5", "start_m": 626, "end_m": 659, "label": "内部T6→T7 连接段"},
+      {"id": "直6", "start_m": 695, "end_m": 725, "label": "内部T7→T8 连接段"},
+      {"id": "直7", "start_m": 769, "end_m": null, "label": "内部T8→计时线"}
+    ]
+  }
 }

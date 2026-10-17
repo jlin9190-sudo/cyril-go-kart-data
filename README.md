@@ -19,7 +19,7 @@ docs/vbo_format.md          VBO 读法
 
 当前内容：
 
-- 赛道 `tracks/foshan_p1/`（佛山P1国际赛车场）
+- 赛道 `tracks/foshan_p1/`（佛山P1国际赛车场）。官方弯号 T1–T17，见 `map_corners.jpg`；航拍是 `map_aerial.jpg`。旧分析里的 T1–T8 已停用。
 - 2026-10-17 两场：`15:17:37`（E）与 `16:04:10`（F）
 - 对比：`analysis/2026-10-17_e_vs_f/`
 - 当天脚本原样放在 `tools/analysis_1017/`（路径仍是当时的绝对路径，没有改成仓库内路径）
@@ -28,7 +28,7 @@ docs/vbo_format.md          VBO 读法
 
 1. 新建 `tracks/<track_id>/`。
 2. 写 `track.json`：名称、计时线经纬度与过线航向、弯道「距计时线米数」区间。官方没有公布的扇区线标成 estimate，不要填未核对过的坐标。
-3. 写 `notes.md`（场地、车辆、数据来源）。有赛道图再放 `map.png`；没有就先不放文件。
+3. 写 `notes.md`（场地、车辆、数据来源）。有赛道图再放进该目录；没有就先不放文件，并在 `notes.md` 里写明。
 
 ## 增加一场 / Add a session
 

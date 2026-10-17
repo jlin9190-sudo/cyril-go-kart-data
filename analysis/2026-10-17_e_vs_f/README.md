@@ -7,6 +7,8 @@ Segment gates = same metre marks as analyze.py. Timing line = N22.875316 E113.26
 Caveat: 直7 times vs B are not directly comparable (today's laps are shorter overall
 ~811-820 m vs B ~834 m). Use whole-lap deltas as ground truth.
 
+弯号：本目录的图、CSV 和 `tools/analysis_1017/` 仍用当时的内部 T1–T8（GPS 粗分区）。官方弯号是 `tracks/foshan_p1/map_corners.jpg` 上的 T1–T17。两套名字不是一一对应，之后的分析用官方弯号。
+
 ## 本仓库里的文件 / Where the files went
 
 - 图：`fig/`（`speed_vs_distance.png`、`line_corners.png`、`segment_delta.png`、`accel_vs_speed.png`）
