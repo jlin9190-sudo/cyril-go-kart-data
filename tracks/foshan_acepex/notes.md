@@ -1,0 +1,7 @@
+# 佛山ACEPEX卡丁车
+
+- 赛道 id：`foshan_acepex`。中文名：佛山ACEPEX卡丁车。
+- 车手：Cyril33。
+- 数据来源：RaceBobo，站点 [carrot.racebobo.cn](https://carrot.racebobo.cn)。原始文件是 VBO，读法见 [docs/vbo_format.md](../../docs/vbo_format.md)。
+- GPS gates TBD。计时线、扇区和弯道门还没有标，不要填未核对过的坐标。
+- 场地示意图还没有放进本目录。

@@ -1,0 +1,19 @@
+{
+  "track": "guangzhou_yiqi_reverse",
+  "session_id": "2026-06-14_16-44",
+  "start": "2026-06-14T16:44:17",
+  "start_time": "2026-06-14T16:44:17",
+  "timezone": "Asia/Shanghai",
+  "utc_in_vbo_header": "2026-06-14T08:44:17.880Z",
+  "source": "RaceBobo",
+  "source_site": "https://carrot.racebobo.cn",
+  "driver": "Cyril33",
+  "site_best_lap": "0:59.937",
+  "site_best_lap_s": 59.937,
+  "racebobo_rid": 5232,
+  "raw_vbo": "raw/guangzhou_yiqi_reverse/2026-06-14/16_44_17.vbo",
+  "original_filename": "广州一起卡丁赛车(反跑)_2026-06-14_16_44_17.vbo",
+  "laps_csv": null,
+  "segments_csv": null,
+  "notes": "Raw import only. laps.csv and segments.csv are omitted; GPS laps have not been cut yet."
+}

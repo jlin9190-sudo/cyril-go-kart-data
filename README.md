@@ -15,12 +15,16 @@ sessions/<track_id>/<id>/   一场的 meta.json、laps.csv、segments.csv
 analysis/<date>_<topic>/    对比说明与图
 tools/                      分析脚本（可后补）
 docs/vbo_format.md          VBO 读法
+docs/session_inventory.md   Cyril33 场次清单
+docs/racebobo_inventory.csv RaceBobo 原始表
 ```
 
 当前内容：
 
 - 赛道 `tracks/foshan_p1/`（佛山P1国际赛车场）。官方弯号 T1–T17，见 `map_corners.jpg`；航拍是 `map_aerial.jpg`。旧分析里的 T1–T8 已停用。
-- 2026-10-17 两场：`15:17:37`（E）与 `16:04:10`（F）
+- 赛道 stub：`tracks/foshan_acepex/`（佛山ACEPEX卡丁车）、`tracks/guangzhou_yiqi/`（广州一起卡丁赛车）、`tracks/guangzhou_yiqi_reverse/`（广州一起卡丁赛车(反跑)）。这三条赛道只有名称，GPS gates TBD。
+- Cyril33 的 RaceBobo 记录共 22 场。清单见 [docs/session_inventory.md](docs/session_inventory.md)，原始表是 [docs/racebobo_inventory.csv](docs/racebobo_inventory.csv)。
+- 2026-10-17 佛山 P1 两场（`15:17:37` E、`16:04:10` F）已有 `laps.csv` 与 `segments.csv`。其余场次只有原始 VBO 和 `meta.json`。
 - 对比：`analysis/2026-10-17_e_vs_f/`
 - 当天脚本原样放在 `tools/analysis_1017/`（路径仍是当时的绝对路径，没有改成仓库内路径）
 
