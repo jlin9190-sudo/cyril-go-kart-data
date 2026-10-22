@@ -20,8 +20,10 @@ On the schematic the lap is: main straight → T1 left hairpin → T2 through T1
 
 官方弯号是 **T1–T17**。之后的分析都用这套名字。
 
-2026-10-17 里的内部 T1–T8 是按 GPS 轨迹切出来的粗分区（8 个弯加 7 段直道），不是示意图上的弯号。两套编号不要混用，也不要把旧的米标套到同名的官方弯上。旧分区留在 `track.json` 的 `legacy_internal_corners_t1_t8`，只作历史记录。每个官方弯的 GPS 门以后再标。
+2026-10-17 里的内部 T1–T8 是按 GPS 轨迹切出来的粗分区（8 个弯加 7 段直道），不是示意图上的弯号。两套编号不要混用，也不要把旧的米标套到同名的官方弯上。旧分区留在 `track.json` 的 `legacy_internal_corners_t1_t8`，只作历史记录。
 
-计时线和扇区估计仍用原来的 GPS 工作值。扇区是估计，场地没有公布坐标。
+官方 T1–T17 的 GPS 米标已写入 `track.json`（`corners.gps_gates` 为 `set`），标定日期 2026-10-17，对照 `map_corners.jpg` 与 session E 第 8 圈轨迹/曲率。米数是计时线之后、沿该圈约 816 m 参考路径的距离。规范源文件是同目录的 `official_T17_gates.json`。复合弯上相邻单弯门比较敏感，教练常用组合：T3–T4、T5–T7、T10–T12、T13–T14、T15–T17。
 
-Official labels are T1–T17. The earlier T1–T8 set was a coarser GPS partition and is superseded. Timing line and sector estimates are unchanged. Per-corner GPS gates are not set yet.
+计时线与闸门文件一致（lat 22.875316，lon 113.26634，heading 206.63°），已由这次 T17 标定确认。扇区仍是估计，场地没有公布坐标。
+
+Official labels are T1–T17. The earlier T1–T8 set was a coarser GPS partition and is superseded. Per-corner GPS gates are set from the 2026-10-17 calibration (session E lap 8, ~816 m). The timing line matches that calibration. Sector estimates are unchanged. Adjacent single-corner gates on compounds can be sensitive; coaching often uses the compound groups above.

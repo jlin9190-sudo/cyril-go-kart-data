@@ -15,7 +15,7 @@
     "lat": 22.875316,
     "lon": 113.26634,
     "crossing_heading_deg": 206.63,
-    "note": "Working point from the 2026-10-17 pipeline (N22.875316 E113.266340, heading 206.63°). Approx lat 22.87532, lon 113.26634, crossing heading ~207°. Kept as-is. The green tick on the main straight in map_corners.jpg has not been surveyed against this point."
+    "note": "Working point from the 2026-10-17 pipeline (N22.875316 E113.266340, heading 206.63°). Confirmed by the 2026-10-17 T17 calibration in official_T17_gates.json (same lat 22.875316, lon 113.26634, heading 206.63°). Approx lat 22.87532, lon 113.26634, crossing heading ~207°. Kept as-is. The green tick on the main straight in map_corners.jpg has not been surveyed against this point."
   },
   "sector_lines_m_after_timing_line": {
     "status": "estimate",
@@ -24,30 +24,39 @@
     "S2_to_S3_m": 644.8
   },
   "lap_length_approx_m": 829,
-  "lap_length_note": "Approximate. GPS path length varies about 811–834 m by session. The 2026-10-17 note compared that day's laps (~811–820 m) with prior session B (~834 m). CSV path lengths: E about 816–850 m (one lap 849.5), F about 807–821 m.",
+  "lap_length_note": "Approximate. GPS path length varies about 811–834 m by session. The 2026-10-17 note compared that day's laps (~811–820 m) with prior session B (~834 m). CSV path lengths: E about 816–850 m (one lap 849.5), F about 807–821 m. Official T1–T17 GPS gates are metres along the session E lap 8 reference path, length about 816 m (official_T17_gates.json).",
   "corners": {
     "basis": "official_map",
     "source": "map_corners.jpg",
-    "gps_gates": "not_set",
-    "note": "Corner list follows the official schematic (T1–T17). GPS metre gates are not assigned yet and must be refined later. Do not copy legacy T1–T8 metre marks onto these ids.",
+    "gps_gates": "set",
+    "calibrated": "2026-10-17",
+    "gates_file": "official_T17_gates.json",
+    "ref_path": {
+      "session": "E",
+      "lap": 8,
+      "length_m": 816,
+      "note": "start_m and end_m are metres after the timing line along the session E lap 8 reference path (~816 m)."
+    },
+    "note": "Corner list follows the official schematic (T1–T17) on map_corners.jpg. GPS metre gates were calibrated 2026-10-17 against map_corners.jpg plus GPS/curvature on session E lap 8. Adjacent single-corner gates on compounds can be sensitive; coaching often uses compound groups (T3–T4, T5–T7, T10–T12, T13–T14, T15–T17). Do not copy legacy T1–T8 metre marks onto these ids.",
+    "compound_groups": ["T3-T4", "T5-T7", "T10-T12", "T13-T14", "T15-T17"],
     "list": [
-      {"id": "T1", "direction": "left", "kind": "hairpin", "note": "Left hairpin at the end of the main straight."},
-      {"id": "T2"},
-      {"id": "T3"},
-      {"id": "T4"},
-      {"id": "T5"},
-      {"id": "T6"},
-      {"id": "T7"},
-      {"id": "T8"},
-      {"id": "T9"},
-      {"id": "T10"},
-      {"id": "T11"},
-      {"id": "T12"},
-      {"id": "T13"},
-      {"id": "T14"},
-      {"id": "T15"},
-      {"id": "T16"},
-      {"id": "T17", "note": "Returns onto the main straight."}
+      {"id": "T1", "direction": "left", "kind": "hairpin", "start_m": 72, "end_m": 115, "note": "左发卡入口 - 主直道末端。Left hairpin entry at the end of the main straight."},
+      {"id": "T2", "direction": "left", "start_m": 115, "end_m": 158, "note": "左发卡出口/第二apex"},
+      {"id": "T3", "direction": "right", "start_m": 185, "end_m": 222, "note": "右U入口"},
+      {"id": "T4", "direction": "right", "start_m": 222, "end_m": 255, "note": "右U出口"},
+      {"id": "T5", "direction": "left", "start_m": 255, "end_m": 278, "note": "左"},
+      {"id": "T6", "direction": "right", "start_m": 278, "end_m": 300, "note": "右kink"},
+      {"id": "T7", "direction": "left", "start_m": 300, "end_m": 318, "note": "左轻kink - 进T8"},
+      {"id": "T8", "direction": "left", "start_m": 318, "end_m": 365, "note": "左发卡 - 示意图左下"},
+      {"id": "T9", "direction": "left", "start_m": 390, "end_m": 425, "note": "底直左kink - 可能全油门"},
+      {"id": "T10", "direction": "right", "start_m": 470, "end_m": 515, "note": "中部右复合入口"},
+      {"id": "T11", "direction": "right", "start_m": 515, "end_m": 540, "note": "右U第一apex"},
+      {"id": "T12", "direction": "right", "start_m": 540, "end_m": 565, "note": "右U第二apex"},
+      {"id": "T13", "direction": "left", "start_m": 565, "end_m": 585, "note": "底部左发卡入口"},
+      {"id": "T14", "direction": "left", "start_m": 585, "end_m": 625, "note": "底部左发卡紧apex"},
+      {"id": "T15", "direction": "left", "start_m": 645, "end_m": 680, "note": "右侧上行左弯"},
+      {"id": "T16", "direction": "right", "start_m": 680, "end_m": 710, "note": "右kink - 可能全油门"},
+      {"id": "T17", "direction": "left", "start_m": 710, "end_m": 755, "note": "左弯接回主直道。Returns onto the main straight."}
     ]
   },
   "legacy_internal_corners_t1_t8": {
