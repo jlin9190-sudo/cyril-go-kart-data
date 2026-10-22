@@ -1,0 +1,152 @@
+{
+  "timing_line": {
+    "lat": 22.875316,
+    "lon": 113.26634,
+    "heading_deg": 206.63
+  },
+  "ref_lap": {
+    "session": "E",
+    "lap": 8,
+    "time": 59.76631593802085,
+    "length_m": 816.0
+  },
+  "corners": [
+    {
+      "id": "T1",
+      "direction": "L",
+      "start_m": 72,
+      "end_m": 115,
+      "note": "左发卡入口 - 主直道末端",
+      "approx_metres_after_timing_line": "72-115"
+    },
+    {
+      "id": "T2",
+      "direction": "L",
+      "start_m": 115,
+      "end_m": 158,
+      "note": "左发卡出口/第二apex",
+      "approx_metres_after_timing_line": "115-158"
+    },
+    {
+      "id": "T3",
+      "direction": "R",
+      "start_m": 185,
+      "end_m": 222,
+      "note": "右U入口",
+      "approx_metres_after_timing_line": "185-222"
+    },
+    {
+      "id": "T4",
+      "direction": "R",
+      "start_m": 222,
+      "end_m": 255,
+      "note": "右U出口",
+      "approx_metres_after_timing_line": "222-255"
+    },
+    {
+      "id": "T5",
+      "direction": "L",
+      "start_m": 255,
+      "end_m": 278,
+      "note": "左",
+      "approx_metres_after_timing_line": "255-278"
+    },
+    {
+      "id": "T6",
+      "direction": "R",
+      "start_m": 278,
+      "end_m": 300,
+      "note": "右kink",
+      "approx_metres_after_timing_line": "278-300"
+    },
+    {
+      "id": "T7",
+      "direction": "L",
+      "start_m": 300,
+      "end_m": 318,
+      "note": "左轻kink - 进T8",
+      "approx_metres_after_timing_line": "300-318"
+    },
+    {
+      "id": "T8",
+      "direction": "L",
+      "start_m": 318,
+      "end_m": 365,
+      "note": "左发卡 - 示意图左下",
+      "approx_metres_after_timing_line": "318-365"
+    },
+    {
+      "id": "T9",
+      "direction": "L",
+      "start_m": 390,
+      "end_m": 425,
+      "note": "底直左kink - 可能全油门",
+      "approx_metres_after_timing_line": "390-425"
+    },
+    {
+      "id": "T10",
+      "direction": "R",
+      "start_m": 470,
+      "end_m": 515,
+      "note": "中部右复合入口",
+      "approx_metres_after_timing_line": "470-515"
+    },
+    {
+      "id": "T11",
+      "direction": "R",
+      "start_m": 515,
+      "end_m": 540,
+      "note": "右U第一apex",
+      "approx_metres_after_timing_line": "515-540"
+    },
+    {
+      "id": "T12",
+      "direction": "R",
+      "start_m": 540,
+      "end_m": 565,
+      "note": "右U第二apex",
+      "approx_metres_after_timing_line": "540-565"
+    },
+    {
+      "id": "T13",
+      "direction": "L",
+      "start_m": 565,
+      "end_m": 585,
+      "note": "底部左发卡入口",
+      "approx_metres_after_timing_line": "565-585"
+    },
+    {
+      "id": "T14",
+      "direction": "L",
+      "start_m": 585,
+      "end_m": 625,
+      "note": "底部左发卡紧apex",
+      "approx_metres_after_timing_line": "585-625"
+    },
+    {
+      "id": "T15",
+      "direction": "L",
+      "start_m": 645,
+      "end_m": 680,
+      "note": "右侧上行左弯",
+      "approx_metres_after_timing_line": "645-680"
+    },
+    {
+      "id": "T16",
+      "direction": "R",
+      "start_m": 680,
+      "end_m": 710,
+      "note": "右kink - 可能全油门",
+      "approx_metres_after_timing_line": "680-710"
+    },
+    {
+      "id": "T17",
+      "direction": "L",
+      "start_m": 710,
+      "end_m": 755,
+      "note": "左弯接回主直道",
+      "approx_metres_after_timing_line": "710-755"
+    }
+  ],
+  "method": "GPS gates matched to official map_corners.jpg T1-T17 labels via trajectory+curvature; metre marks along E L8 ref path"
+}
